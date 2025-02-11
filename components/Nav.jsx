@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 
 
 export default function Nav() {
-    const isUserLoggedIn = true;
+    const isUserLoggedIn = false;
 
     return (
         <nav className="flex-between mb-16 pt-3 w-full">
@@ -43,7 +43,11 @@ export default function Nav() {
                         </Link>
                     </div>
                 ): (
-                  <></>      
+                    <>
+                        <button type="button" className="outline_btn">
+                            Sign In
+                        </button>
+                    </>      
             )}
             </div>
         </nav>
